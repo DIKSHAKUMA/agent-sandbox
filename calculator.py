@@ -7,6 +7,8 @@ def divide(numerator: float, denominator: float) -> float:
     Raises:
         ValueError: if the denominator is zero.
     """
+    if denominator == 0:
+        raise ValueError("Cannot divide by zero")
     return numerator / denominator
 
 
